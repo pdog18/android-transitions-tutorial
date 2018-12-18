@@ -8,6 +8,7 @@
 
     <ImageView android:layout_width="300dp" android:layout_height="wrap_content"
                android:background="@mipmap/hencoder"
+               android:layout_gravity="center"
                android:id="@+id/image"
     />
 

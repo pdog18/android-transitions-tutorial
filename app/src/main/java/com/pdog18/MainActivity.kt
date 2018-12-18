@@ -1,15 +1,13 @@
 package com.pdog18
 
 import androidx.fragment.app.Fragment
-import com.pdog18.transition.AutoFragment
-import com.pdog18.transition.ExplodeFragment
-import com.pdog18.transition.ImageTransformFragment
-import com.pdog18.transition.SlideFragment
+import com.pdog18.transition.*
 
 class MainActivity : TabViewPagerActivity() {
     override val fragments: Array<Fragment> =
         arrayOf(
-//            ImageTransformFragment(),
+            PathFragment(),
+            ImageTransformFragment(),
             ExplodeFragment(),
             AutoFragment(),
             SlideFragment()

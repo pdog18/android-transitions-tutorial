@@ -21,6 +21,7 @@ class SlideFragment : BaseFragment() {
             var visible: Boolean = false
             override fun onClick(v: View) {
                 val transition = Slide(Gravity.END)
+
                 TransitionManager.beginDelayedTransition(transitions_slide_container, transition)
                 visible = !visible
                 text_slide.visibility = if (visible) View.VISIBLE else View.GONE

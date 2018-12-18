@@ -1,6 +1,7 @@
 package com.pdog18.transition
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import com.pdog18.BaseFragment
 import com.pdog18.Layout
@@ -17,10 +18,11 @@ class ImageTransformFragment : BaseFragment() {
         super.onViewCreated(view, savedInstanceState)
 
         image.setOnClickListener(object : View.OnClickListener {
-            var expanded: Boolean = false
+            var expanded: Boolean = true
             override fun onClick(v: View) {
                 TransitionManager.beginDelayedTransition(
-                    transitions_image_container, TransitionSet()
+                    transitions_image_container,
+                    TransitionSet()
                         .addTransition(ChangeBounds())
                         .addTransition(ChangeImageTransform())
                 )
@@ -31,6 +33,8 @@ class ImageTransformFragment : BaseFragment() {
                 else
                     ViewGroup.LayoutParams.WRAP_CONTENT
                 image.layoutParams = params
+
+                expanded = !expanded
 
                 image.scaleType = if (expanded)
                     ImageView.ScaleType.CENTER_CROP
