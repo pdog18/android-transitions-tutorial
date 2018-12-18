@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/transitions_slide_container"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorAccent"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="200dp"
+                  android:layout_gravity="center_vertical"
+                  android:orientation="vertical">
+
+        <Button android:id="@+id/button_slide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DO MAGIC"/>
+
+        <TextView
+                android:id="@+id/text_slide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Transitions are awesome!"
+                android:visibility="gone"/>
+    </LinearLayout>
+
+
+    <Space android:layout_width="50dp" android:layout_height="1dp"/>
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="200dp"
+                  android:layout_gravity="end|center_vertical"
+                  android:orientation="vertical">
+
+        <Button android:id="@+id/button_slide_pale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DO PALE"/>
+
+        <TextView
+                android:id="@+id/text_slide_pale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="I'm pale and weak..."
+                android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,14 +1,12 @@
 apply plugin: 'com.android.application'
-
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.pdog18.transition"
-        minSdkVersion 14
+        minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -43,4 +41,6 @@ dependencies {
             'com.google.android:flexbox:1.0.0',
             'com.google.android.material:material:1.1.0-alpha01'
     ])
+
+    api 'com.pdog.util:dimension-extensions:0.9.0'
 }
