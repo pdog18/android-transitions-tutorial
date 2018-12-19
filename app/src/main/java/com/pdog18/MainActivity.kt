@@ -9,6 +9,7 @@ import com.pdog18.go.GoAutoFragment
 class MainActivity : TabViewPagerActivity() {
     override val fragments: Array<Fragment> =
         arrayOf(
+            ScaleFragment(),
             GoAutoFragment(),
             SetFragment(),
             ExcludeTargetFragment(),
@@ -16,7 +17,6 @@ class MainActivity : TabViewPagerActivity() {
             ImageTransformFragment(),
             ExplodeFragment(),
             AutoFragment(),
-            ScaleFragment(),
             SlideFragment()
         )
 }

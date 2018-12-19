@@ -19,6 +19,7 @@
                 android:text="DO MAGIC"/>
 
         <TextView
+                android:background="@color/colorPrimaryDark"
                 android:id="@+id/text_scale"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -40,13 +41,13 @@
                 android:layout_height="wrap_content"
                 android:text="DO PALE"/>
 
-        <TextView
-                android:id="@+id/text_scale_pale"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="I'm pale and weak..."
-                android:visibility="gone"/>
+        <TextView android:background="@color/colorPrimaryDark"
+                  android:id="@+id/text_scale_pale"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="16dp"
+                  android:text="I'm pale and weak..."
+                  android:visibility="gone"/>
     </LinearLayout>
 
 </LinearLayout>
