@@ -18,6 +18,12 @@
                 android:layout_height="wrap_content"
                 android:text="DO MAGIC"/>
 
+        <View
+                android:id="@+id/view_toggle"
+                android:layout_width="100dp"
+                android:background="@color/colorAccent"
+                android:layout_height="100dp"
+        />
         <TextView
                 android:id="@+id/text"
                 android:layout_width="wrap_content"
@@ -34,5 +40,7 @@
                 android:layout_marginTop="16dp"
                 android:text="I'm exclude"
                 android:visibility="gone"/>
+
+
     </LinearLayout>
 </LinearLayout>

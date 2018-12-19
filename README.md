@@ -35,6 +35,7 @@
 2. 然后通过 Android 的 API 实现一些常见的过渡动画 
 
    1. `TransitionManager.beginDelayedTransition()`
+      * `Transition#excludeTarget()`
    2. `TransitionManager.go()`
       * 介绍`Scene` 的概念
       * 介绍`Transition` 的概念

@@ -7,6 +7,7 @@ import com.pdog18.transition.*
 class MainActivity : TabViewPagerActivity() {
     override val fragments: Array<Fragment> =
         arrayOf(
+            SetFragment(),
             ExcludeTargetFragment(),
             PathFragment(),
             ImageTransformFragment(),
