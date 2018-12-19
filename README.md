@@ -36,7 +36,7 @@
 
    1. `TransitionManager.beginDelayedTransition()`
       * `Transition#excludeTarget()`
-      * `transitionSet`
+      * `transitionSet` (配合'`addTarget()`讲解')
       * `addTarget()`
    2. `TransitionManager.go()`
       * 介绍`Scene` 的概念
