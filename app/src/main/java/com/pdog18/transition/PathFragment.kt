@@ -41,7 +41,7 @@ class PathFragment : BaseFragment() {
         })
 
         pale.setOnClickListener(object : View.OnClickListener {
-            var isReturnAnimation: Boolean = true
+            var isReturnAnimation: Boolean = false
             override fun onClick(v: View?) {
                 isReturnAnimation = !isReturnAnimation
 
