@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/parent"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <View android:layout_width="200dp" android:layout_height="50dp"
+          android:background="@color/colorPrimaryDark"
+          app:layout_constraintStart_toStartOf="parent"
+          android:id="@+id/view_1"
+          app:layout_constraintTop_toTopOf="parent"
+    />
+
+    <View
+            app:layout_constraintTop_toBottomOf="@id/view_1"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@id/view_1"
+            android:id="@+id/view_2"
+            android:layout_width="100dp" android:layout_height="50dp"
+    />
+
+    <View android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:id="@+id/bottom"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          android:background="@color/colorAccent"
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>
