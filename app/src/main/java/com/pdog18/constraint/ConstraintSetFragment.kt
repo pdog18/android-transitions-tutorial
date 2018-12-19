@@ -21,16 +21,22 @@ class ConstraintSetFragment : BaseFragment() {
             var changed = false
             override fun onClick(v: View?) {
                 changed = !changed
-                val constraintSet = ConstraintSet()
+
                 val layoutId = if (changed)
                     R.layout.detail
                 else
                     R.layout.summary
 
-                constraintSet.clone(context, layoutId)
-                TransitionManager.beginDelayedTransition(parent)
-                constraintSet.applyTo(parent)
+                change(layoutId)
             }
         })
+    }
+
+
+    private fun change(layoutId: Int) {
+        val constraintSet = ConstraintSet()
+        constraintSet.clone(context, layoutId)
+        TransitionManager.beginDelayedTransition(parent)
+        constraintSet.applyTo(parent)
     }
 }
