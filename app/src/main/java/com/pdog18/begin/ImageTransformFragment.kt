@@ -1,10 +1,9 @@
 package com.pdog18.begin
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import com.pdog18.BaseFragment
-import com.pdog18.Layout
+import com.pdog18.helper.BaseFragment
+import com.pdog18.helper.Layout
 import kotlinx.android.synthetic.main.image_transform.*
 import android.view.ViewGroup
 import android.widget.ImageView

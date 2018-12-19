@@ -2,8 +2,8 @@ package com.pdog18.begin
 
 import android.os.Bundle
 import android.view.View
-import com.pdog18.BaseFragment
-import com.pdog18.Layout
+import com.pdog18.helper.BaseFragment
+import com.pdog18.helper.Layout
 import androidx.transition.TransitionManager
 import kotlinx.android.synthetic.main.path.*
 import android.view.Gravity

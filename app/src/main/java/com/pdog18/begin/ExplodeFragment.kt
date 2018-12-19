@@ -5,7 +5,6 @@ import android.graphics.Color
 import android.graphics.Rect
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import android.view.Gravity
 import android.view.View
 import android.view.ViewGroup
@@ -16,8 +15,8 @@ import androidx.transition.Explode
 import androidx.transition.Transition
 import androidx.transition.TransitionManager
 import com.pdog.dimension.dp
-import com.pdog18.BaseFragment
-import com.pdog18.Layout
+import com.pdog18.helper.BaseFragment
+import com.pdog18.helper.Layout
 import com.pdog18.transition.R
 import kotlinx.android.synthetic.main.explode.*
 

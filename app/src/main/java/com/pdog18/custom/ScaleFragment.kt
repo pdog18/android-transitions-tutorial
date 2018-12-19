@@ -2,8 +2,8 @@ package com.pdog18.custom
 
 import android.os.Bundle
 import android.view.View
-import com.pdog18.BaseFragment
-import com.pdog18.Layout
+import com.pdog18.helper.BaseFragment
+import com.pdog18.helper.Layout
 import androidx.transition.TransitionManager
 import com.pdog18.transition.R
 import kotlinx.android.synthetic.main.scale.*

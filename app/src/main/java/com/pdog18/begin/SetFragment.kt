@@ -5,16 +5,16 @@ import android.view.Gravity
 import android.view.View
 import androidx.transition.ChangeBounds
 import androidx.transition.Slide
-import com.pdog18.BaseFragment
-import com.pdog18.Layout
+import com.pdog18.helper.BaseFragment
+import com.pdog18.helper.Layout
 import androidx.transition.TransitionManager
 import androidx.transition.TransitionSet
 import com.pdog.dimension.dp
 import com.pdog18.transition.R
-import kotlinx.android.synthetic.main.exclude.*
+import kotlinx.android.synthetic.main.transition_set.*
 
 
-@Layout(R.layout.exclude)
+@Layout(R.layout.transition_set)
 class SetFragment : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

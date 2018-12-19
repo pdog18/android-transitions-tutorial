@@ -2,11 +2,10 @@ package com.pdog18.go
 
 import android.os.Bundle
 import android.view.View
-import androidx.transition.AutoTransition
 import androidx.transition.ChangeBounds
 import androidx.transition.Scene
-import com.pdog18.BaseFragment
-import com.pdog18.Layout
+import com.pdog18.helper.BaseFragment
+import com.pdog18.helper.Layout
 import androidx.transition.TransitionManager
 import com.pdog18.transition.R
 import kotlinx.android.synthetic.main.go_auto_parent.*

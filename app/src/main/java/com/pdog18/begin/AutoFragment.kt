@@ -4,8 +4,8 @@ import android.os.Bundle
 import android.view.View
 import android.view.animation.OvershootInterpolator
 import androidx.transition.AutoTransition
-import com.pdog18.BaseFragment
-import com.pdog18.Layout
+import com.pdog18.helper.BaseFragment
+import com.pdog18.helper.Layout
 import androidx.transition.TransitionManager
 import com.pdog18.transition.R
 import kotlinx.android.synthetic.main.auto.*

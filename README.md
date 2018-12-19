@@ -42,7 +42,8 @@
       * 介绍`Scene` 的概念
       * 介绍`Transition` 的概念
         * 不同`transition` 的分类
-      * 介绍`go()` 和 `beginDelayedTransitio()`的相同之处和不同之处
+        * 自定义一个`ScaleTransition`
+      * 介绍`go()` 和 `beginDelayedTransitio()`的关联
    3. `ConstraintSet` 关键帧动画
       * 介绍`Scene` 和`ConstranitSet`的的相同之处和不同之处
       * `MotionLayout`
