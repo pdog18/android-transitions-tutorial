@@ -7,10 +7,10 @@ import androidx.transition.TransitionManager
 import com.pdog18.helper.BaseFragment
 import com.pdog18.helper.Layout
 import com.pdog18.transition.R
-import kotlinx.android.synthetic.main.summary.*
+import kotlinx.android.synthetic.main.constranit_set_raw.*
 
 
-@Layout(R.layout.summary)
+@Layout(R.layout.constranit_set_raw)
 class ConstraintSetFragment : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -23,9 +23,9 @@ class ConstraintSetFragment : BaseFragment() {
                 changed = !changed
 
                 val layoutId = if (changed)
-                    R.layout.detail
+                    R.layout.constranit_set_detail
                 else
-                    R.layout.summary
+                    R.layout.constranit_set_raw
 
                 change(layoutId)
             }

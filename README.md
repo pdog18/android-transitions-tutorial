@@ -35,23 +35,37 @@
 2. 然后通过 Android 的 API 实现一些常见的过渡动画 
 
    1. `TransitionManager.beginDelayedTransition()`
+
       * `Transition#excludeTarget()`
       * `transitionSet` (配合'`addTarget()`讲解')
       * `addTarget()`
+
    2. `TransitionManager.go()`
+
       * 介绍`Scene` 的概念
       * 介绍`Transition` 的概念
         * 不同`transition` 的分类
         * 自定义一个`ScaleTransition`
       * 介绍`go()` 和 `beginDelayedTransitio()`的关联
+
    3. `ConstraintSet` 关键帧动画
+
       * 介绍`Scene` 和`ConstranitSet`的的相同之处和不同之处
+
+         (特别从是从`childView`是否重新被添加这里介绍一下)
+
       * `MotionLayout`
+
       * `Keyframe Animations` 关键帧，通过关键帧调整动画曲线
+
+        同时介绍关键帧这个知识点
+
    4. 在能力范围内的源码解析
 
       * 理解为什么过渡动画会生效
+
    5. 共享元素介绍及使用
+
       * `Activity` 和`Fragment Transition` 
 
 3. 能力之内的源码解读
