@@ -1,4 +1,4 @@
-package com.pdog18.transition
+package com.pdog18.begin
 
 import android.os.Bundle
 import android.util.Log
@@ -9,6 +9,7 @@ import kotlinx.android.synthetic.main.image_transform.*
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.transition.*
+import com.pdog18.transition.R
 
 
 @Layout(R.layout.image_transform)

@@ -1,4 +1,4 @@
-package com.pdog18.transition
+package com.pdog18.begin
 
 import android.annotation.TargetApi
 import android.graphics.Color
@@ -18,6 +18,7 @@ import androidx.transition.TransitionManager
 import com.pdog.dimension.dp
 import com.pdog18.BaseFragment
 import com.pdog18.Layout
+import com.pdog18.transition.R
 import kotlinx.android.synthetic.main.explode.*
 
 

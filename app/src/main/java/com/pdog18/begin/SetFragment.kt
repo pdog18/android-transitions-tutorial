@@ -1,4 +1,4 @@
-package com.pdog18.transition
+package com.pdog18.begin
 
 import android.os.Bundle
 import android.view.Gravity
@@ -10,6 +10,7 @@ import com.pdog18.Layout
 import androidx.transition.TransitionManager
 import androidx.transition.TransitionSet
 import com.pdog.dimension.dp
+import com.pdog18.transition.R
 import kotlinx.android.synthetic.main.exclude.*
 
 

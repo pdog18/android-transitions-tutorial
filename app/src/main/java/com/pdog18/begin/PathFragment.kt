@@ -1,4 +1,4 @@
-package com.pdog18.transition
+package com.pdog18.begin
 
 import android.os.Bundle
 import android.view.View
@@ -10,6 +10,7 @@ import android.view.Gravity
 import android.widget.FrameLayout
 import androidx.transition.ArcMotion
 import androidx.transition.ChangeBounds
+import com.pdog18.transition.R
 
 
 @Layout(R.layout.path)

@@ -1,4 +1,4 @@
-package com.pdog18.transition
+package com.pdog18.begin
 
 import android.os.Bundle
 import android.view.View
@@ -7,6 +7,7 @@ import androidx.transition.AutoTransition
 import com.pdog18.BaseFragment
 import com.pdog18.Layout
 import androidx.transition.TransitionManager
+import com.pdog18.transition.R
 import kotlinx.android.synthetic.main.auto.*
 
 
