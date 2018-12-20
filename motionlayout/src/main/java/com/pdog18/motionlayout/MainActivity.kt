@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.main_activity)
 
         motion_layout.apply {
-            loadLayoutDescription(R.xml.scene_02)
+            loadLayoutDescription(R.xml.scene_03)
             setShowPaths(true)
         }
 
