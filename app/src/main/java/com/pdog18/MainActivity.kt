@@ -5,7 +5,6 @@ import com.pdog18.begin.*
 import com.pdog18.begin.SlideFragment
 import com.pdog18.constraint.ConstraintSetFragment
 import com.pdog18.custom.ScaleFragment
-import com.pdog18.go.GoAutoFragment
 import com.pdog18.helper.TabViewPagerActivity
 
 class MainActivity : TabViewPagerActivity() {
@@ -13,7 +12,7 @@ class MainActivity : TabViewPagerActivity() {
         arrayOf(
             ConstraintSetFragment(),
             ScaleFragment(),
-            GoAutoFragment(),
+            com.pdog18.go.GoAutoFragment(),
             SetFragment(),
             ExcludeTargetFragment(),
             PathFragment(),
@@ -23,4 +22,3 @@ class MainActivity : TabViewPagerActivity() {
             SlideFragment()
         )
 }
-

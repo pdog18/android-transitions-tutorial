@@ -28,7 +28,7 @@
 
 ### 手段
 
-1. 介绍**设计层面**的 **过渡动画**（Andriod 、CSS3 、KeyNote 等过渡效果）
+1. 介绍**设计层面**的 **过渡动画**（Android 、CSS3 、KeyNote 等过渡效果）
 
    对比一个场景在使用过渡动画前后的效果。
 
@@ -54,7 +54,7 @@
 
          (特别从是从`childView`是否重新被添加这里介绍一下)
 
-      * `MotionLayout`
+      * `MotionLayout` (重点讲解)
 
       * `Keyframe Animations` 关键帧，通过关键帧调整动画曲线
 
