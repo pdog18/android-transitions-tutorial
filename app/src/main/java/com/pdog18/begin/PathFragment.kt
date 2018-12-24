@@ -28,7 +28,7 @@ class PathFragment : BaseFragment() {
                 TransitionManager.beginDelayedTransition(
                     transitionsContainer,
                     ChangeBounds().apply {
-                        setPathMotion(ArcMotion())
+//                        setPathMotion(ArcMotion())
                         duration = 500
                     })
 

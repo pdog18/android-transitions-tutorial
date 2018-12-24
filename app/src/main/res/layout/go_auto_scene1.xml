@@ -6,7 +6,7 @@
              android:layout_gravity="center_vertical">
 
 
-    <TextView
+    <com.pdog18.helper.LogTextView
             android:id="@+id/text"
             android:layout_width="wrap_content"
             android:layout_gravity="top|start"

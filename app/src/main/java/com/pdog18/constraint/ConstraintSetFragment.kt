@@ -16,6 +16,7 @@ class ConstraintSetFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        text_view.text = "很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长的文字!!"
         // magic
         parent.setOnClickListener(object : View.OnClickListener {
             var changed = false
@@ -26,6 +27,12 @@ class ConstraintSetFragment : BaseFragment() {
                     R.layout.constranit_set_detail
                 else
                     R.layout.constranit_set_raw
+
+                if (changed) {
+                    text_view.maxLines = 10
+                }else{
+                    text_view.maxLines = 1
+                }
 
                 change(layoutId)
             }

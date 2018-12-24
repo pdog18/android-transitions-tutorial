@@ -5,7 +5,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <View android:layout_width="200dp" android:layout_height="50dp"
+    <com.pdog18.helper.LogTextView android:layout_width="200dp" android:layout_height="50dp"
           android:background="@color/colorPrimaryDark"
           app:layout_constraintStart_toStartOf="parent"
           android:id="@+id/view_1"
