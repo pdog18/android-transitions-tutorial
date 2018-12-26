@@ -1,1 +1,1 @@
-include ':app', ':motionlayout', ':rtfsc'
+include ':app', ':motionlayout', ':rtfsc', ':homework'
