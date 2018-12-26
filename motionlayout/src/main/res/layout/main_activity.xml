@@ -13,4 +13,12 @@
             android:onClick="openActivity"
             android:contentDescription="ArcMotionActivity"
     />
+
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Main2Activity"
+            android:onClick="openActivity"
+            android:contentDescription="Main2Activity"
+    />
 </LinearLayout>

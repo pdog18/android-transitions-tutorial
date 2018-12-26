@@ -6,8 +6,7 @@
             motion:constraintSetEnd="@+id/end"
             motion:constraintSetStart="@+id/start"
             motion:duration="1000">
-        <KeyFrameSet>
-
+      <!--  <KeyFrameSet>
 
             <KeyPosition
                     motion:keyPositionType="pathRelative"
@@ -25,7 +24,7 @@
                     motion:framePosition="75"
                     motion:pathMotionArc="flip"
                     motion:target="@id/view"/>
-        </KeyFrameSet>
+        </KeyFrameSet>-->
         <OnSwipe
                 motion:dragDirection="dragRight"
                 motion:touchAnchorId="@id/view"
@@ -37,7 +36,6 @@
 
         <Constraint
                 android:id="@id/view"
-                motion:pathMotionArc="startVertical"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:layout_margin="8dp"

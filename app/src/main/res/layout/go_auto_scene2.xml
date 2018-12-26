@@ -5,13 +5,6 @@
              android:id="@+id/container"
              android:layout_gravity="center_vertical">
 
-    <com.pdog18.helper.LogTextView
-            android:id="@+id/text"
-            android:layout_width="wrap_content"
-            android:layout_gravity="top|end"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:text="Transitions are awesome!"/>
 
     <ImageView
             android:id="@+id/image"
@@ -20,4 +13,14 @@
             android:layout_margin="16dp"
             android:layout_gravity="top|start"
             android:src="@mipmap/ic_launcher"/>
+
+
+
+    <com.pdog18.helper.LogTextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Transitions are awesome!"/>
 </FrameLayout>

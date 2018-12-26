@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".ArcMotionActivity">
         </activity>
+        <activity android:name=".Main2Activity">
+        </activity>
     </application>
 
 </manifest>

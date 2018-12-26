@@ -17,12 +17,12 @@ class MainActivity : AppCompatActivity() {
         motion_layout.setOnClickListener(object : View.OnClickListener {
             private var toggle = true
             override fun onClick(v: View?) {
-                Log.e("tag", "toogle${toggle}")
                 toggle = !toggle
                 if (toggle) {
-                    TransitionManager.beginDelayedTransition(motion_layout)
-                    guide_v.setGuidelinePercent(0.3f)
-                    guide_h.setGuidelinePercent(0.7f)
+//                    TransitionManager.beginDelayedTransition(motion_layout)
+//                    guide_v.setGuidelinePercent(0.3f)
+//                    guide_h.setGuidelinePercent(0.7f)
+                    motion_layout.transitionToStart()
                 } else
                     motion_layout.transitionToEnd()
             }

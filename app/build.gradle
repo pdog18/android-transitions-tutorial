@@ -37,7 +37,7 @@ dependencies {
             'androidx.recyclerview:recyclerview:1.0.0',
             'androidx.cardview:cardview:1.0.0',
             'androidx.annotation:annotation:1.0.0',
-            'androidx.constraintlayout:constraintlayout:2.0.0-alpha2',
+            'androidx.constraintlayout:constraintlayout:2.0.0-alpha3',
             'com.google.android:flexbox:1.0.0',
             'com.google.android.material:material:1.1.0-alpha01'
     ])

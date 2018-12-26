@@ -14,16 +14,26 @@
   limitations under the License.
   -->
 <MotionScene
-        xmlns:motion="http://schemas.android.com/apk/res-auto">
+        xmlns:motion="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android">
 
     <Transition
-            motion:constraintSetStart="@layout/motion_01_cl_start"
-            motion:constraintSetEnd="@layout/motion_01_cl_end">
-        <OnSwipe
-                motion:touchAnchorId="@+id/button"
-                motion:touchAnchorSide="right"
-                motion:dragDirection="dragRight"/>
+            motion:constraintSetStart="@+id/start"
+            motion:constraintSetEnd="@+id/end">
 
     </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint android:id="@id/view">
+            <Transform motion:rotation="0"/>
+        </Constraint>
+    </ConstraintSet>
+
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint android:id="@id/view">
+            <Transform motion:rotation="180"/>
+        </Constraint>
+    </ConstraintSet>
 
 </MotionScene>

@@ -3,13 +3,14 @@
              android:id="@+id/transitions_auto_container"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             android:background="@color/colorPrimary"
              android:orientation="vertical">
 
 
     <FrameLayout
             android:id="@+id/parent"
-            android:layout_width="match_parent" android:layout_height="match_parent">
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
         <include layout="@layout/go_auto_scene1"/>
     </FrameLayout>
@@ -20,11 +21,5 @@
             android:layout_gravity="start|bottom"
             android:text="DO MAGIC"/>
 
-
-    <Button android:id="@+id/button_delay"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end|bottom"
-            android:text="DELAY"/>
 
 </FrameLayout>
