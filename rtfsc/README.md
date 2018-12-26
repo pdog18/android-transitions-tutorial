@@ -27,7 +27,7 @@ public class TransitionValues {
 
 
 
-### TrasitionValuesMaps
+### TransitionValuesMaps
 
 ```java
 class TransitionValuesMaps {

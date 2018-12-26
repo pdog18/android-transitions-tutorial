@@ -107,13 +107,25 @@ HenCoder 官网首页](https://hencoder.com/) 打开时的动画效果
 
 
 
-### `go()` 和 `beginDelayedTransitio()`的关联
-
 
 
 ## TransitionManager 源码解读
 
-TransitionManager 工作模型
+查看 `Transition/rtfsc/README.md`
+
+
+
+
+
+#### `beginDelayedTransition()` 和 `go()` 的区别
+
+`go()` 在 `enter()` 中会进行 `removeAllViews()` 和 `addView`
+
+`beginDelayedTransition()` 需要自己对布局修改，触发`MultiListener#onPreView()`
+
+#### 
+
+
 
 
 
