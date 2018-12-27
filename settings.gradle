@@ -1,1 +1,3 @@
-include ':app', ':motionlayout', ':rtfsc', ':homework'
+include ':app', ':motionlayout',   ':homework',  ':util', ':sample-constraintlayout',
+        ':sample-begin-delayed',
+        ':sample-go'
