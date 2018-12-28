@@ -14,17 +14,20 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.constranit_set_raw)
 
         view_2.text = "HenCoder : 给高级 Android 工程师的进阶手册。"
-        constraint_parent.setOnToggleListener { toggle ->
-            val layoutId = if (toggle) R.layout.constranit_set_detail else R.layout.constranit_set_raw
-            change(layoutId)
+
+        val raw = ConstraintSet().apply {
+            this.clone(this@MainActivity, R.layout.constranit_set_raw)
         }
-    }
+
+        val detail = ConstraintSet().apply {
+            this.clone(this@MainActivity, R.layout.constranit_set_detail)
+        }
 
 
-    private fun change(layoutId: Int) {
-        val constraintSet = ConstraintSet()
-        constraintSet.clone(this, layoutId)
-        TransitionManager.beginDelayedTransition(constraint_parent)
-        constraintSet.applyTo(constraint_parent)
+        constraint_parent.setOnToggleListener { toggle ->
+            val constraintSet = if (toggle) detail else raw
+            TransitionManager.beginDelayedTransition(constraint_parent)
+            constraintSet.applyTo(constraint_parent)
+        }
     }
 }
