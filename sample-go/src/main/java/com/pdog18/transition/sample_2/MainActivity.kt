@@ -22,6 +22,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+//        scene_text.text = ""
         scene1 = Scene.getSceneForLayout(scene_root, R.layout.scene1, this)
         scene2 = Scene.getSceneForLayout(scene_root, R.layout.scene2, this)
     }

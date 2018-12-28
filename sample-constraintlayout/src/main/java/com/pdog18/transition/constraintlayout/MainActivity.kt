@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.constranit_set_raw)
 
+        view_2.text = "HenCoder : 给高级 Android 工程师的进阶手册。"
         constraint_parent.setOnToggleListener { toggle ->
             val layoutId = if (toggle) R.layout.constranit_set_detail else R.layout.constranit_set_raw
             change(layoutId)

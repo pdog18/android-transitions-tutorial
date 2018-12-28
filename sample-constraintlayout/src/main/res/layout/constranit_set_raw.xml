@@ -16,12 +16,11 @@
             android:layout_width="200dp"
             android:background="@android:color/white"
             android:padding="16dp"
-            android:text="The girl is facing away from the stairs."
             android:layout_height="wrap_content"
     />
     <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="200dp"
-            android:layout_height="150dp"
+            android:layout_height="170dp"
             android:id="@+id/view_1"
             android:background="@color/colorAccent"
             app:layout_constraintStart_toStartOf="parent"
@@ -33,7 +32,7 @@
     <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="32dp"
             android:id="@+id/icon"
-            android:src="@mipmap/ic_launcher"
+            android:src="@mipmap/ic_launcher_round"
             app:layout_constraintEnd_toEndOf="@id/view_1"
             app:layout_constraintTop_toTopOf="@id/view_1"
             app:layout_constraintBottom_toBottomOf="@id/view_1"

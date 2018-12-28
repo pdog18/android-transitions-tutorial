@@ -16,7 +16,6 @@
             android:background="@android:color/white"
             android:padding="16dp"
             app:layout_constraintTop_toBottomOf="@id/view_1"
-            android:text="The girl is facing away from the stairs."
             android:layout_height="wrap_content"
     />
     <androidx.appcompat.widget.AppCompatImageView
@@ -32,7 +31,7 @@
 
     <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="32dp"
-            android:src="@mipmap/ic_launcher"
+            android:src="@mipmap/ic_launcher_round"
             android:id="@+id/icon"
             app:layout_constraintEnd_toEndOf="@id/view_1"
             app:layout_constraintTop_toBottomOf="@id/view_1"
