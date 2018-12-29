@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Main2Activity"
+        android:id="@+id/linear_layout"
+        android:orientation="vertical"
+>
+
+
+    <TextView
+            style="@style/style_text_view_title"
+            android:text="自定义 View 1-1 绘制基础"
+            android:id="@+id/title1" />
+
+
+    <TextView
+            android:id="@+id/content1"
+            android:text="从今天开始，HenCoder 就正式开讲知识技能了。按照我的计划，第一季是 UI，UI 一共分为三部分：绘制、布局和触摸反馈。本期是绘制部分的第一期。绘制大概会用 5~6 期的时间讲完，整个 UI 的绘制、布局和触摸反馈三部分大概会用十来期。更新频率大约为每周一更（不承诺哟）。 如果你不知道 HenCoder 是什么，可以先看这里： HenCoder：给高级 Android 工程师的进阶手册 自定义绘制概述 "
+            style="@style/style_text_view_content"/>
+
+
+    <TextView
+            android:text="自定义 View 1-2 Paint 详解"
+            android:id="@+id/title2"
+            style="@style/style_text_view_title"/>
+    <TextView
+            android:id="@+id/content2"
+            android:text="这期是 HenCoder 自定义绘制的第二期： Paint。如果你没看过第一期，可以先去看一下第一期： HenCoder Android 开发进阶：自定义 View 1-1 绘制基础 简介 上一期我已经简单说过， Canvas 的 drawXXX() 方法配合 Paint 的几个常用方法可以实现最常见的绘制需求；而如果你只会基本的绘制， Paint 的完全功能的掌握，能让你更进一步，做出一些更加细致、炫酷的效果。"
+            style="@style/style_text_view_content"/>
+
+
+    <TextView
+            android:text="自定义 View 1-3 drawText() 文字的绘制"
+            android:id="@+id/title3"
+            style="@style/style_text_view_title"/>
+    <TextView
+            android:id="@+id/content3"
+            android:text="上期的 Paint 详解里已经说过，文字的绘制所能控制的内容太多太细，必须拆成单独的一期专门来讲。今天这期，就是来把这些细节讲清楚的。 需要说明的有两点： 和上期一样，这期讲的是细节，其中有一部分内容并不是很常用，所以这期你不必要求自己把内容全部背会，而只要做到全部理解，知道都有什么东西，大概怎么用就好，"
+            style="@style/style_text_view_content"/>
+</LinearLayout>
