@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.pdog18.transition.constraintlayout.HenCoderWithConstraintLayout">
+
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:id="@+id/guide"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:text="H"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintTop_toTopOf="@id/guide"
+            app:layout_constraintBottom_toBottomOf="@id/guide"
+            app:layout_constraintEnd_toStartOf="@id/e1"
+            android:id="@+id/h"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="36sp"
+    />
+
+    <TextView
+            android:text="E"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:id="@+id/e1"
+            app:layout_constraintEnd_toStartOf="@id/n"
+            app:layout_constraintBaseline_toBaselineOf="@id/h"
+            android:textSize="36sp"
+            app:layout_constraintStart_toEndOf="@+id/h"/>
+
+    <TextView
+            app:layout_constraintBaseline_toBaselineOf="@id/h"
+            android:text="N"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:id="@+id/n"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toStartOf="@id/c1"
+            app:layout_constraintStart_toEndOf="@+id/e1"/>
+    <TextView
+            app:layout_constraintBaseline_toBaselineOf="@id/h"
+
+            android:text="C"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:id="@+id/c1"
+            app:layout_constraintEnd_toStartOf="@id/o1"
+            android:textSize="36sp"
+            app:layout_constraintStart_toEndOf="@+id/n"/>
+    <TextView
+            app:layout_constraintBaseline_toBaselineOf="@id/h"
+            app:layout_constraintEnd_toStartOf="@id/d1"
+            android:text="O"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:id="@+id/o1"
+            android:textSize="36sp"
+            app:layout_constraintStart_toEndOf="@+id/c1"/>
+    <TextView
+            app:layout_constraintBaseline_toBaselineOf="@id/h"
+            app:layout_constraintStart_toEndOf="@id/o1"
+            android:text="D"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:id="@+id/d1"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toStartOf="@+id/e2"
+    />
+    <TextView
+            app:layout_constraintBaseline_toBaselineOf="@id/h"
+
+            android:text="E"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:id="@+id/e2"
+            android:textSize="36sp"
+            app:layout_constraintStart_toEndOf="@id/d1"
+            app:layout_constraintEnd_toStartOf="@+id/r"
+    />
+    <TextView
+            app:layout_constraintBaseline_toBaselineOf="@id/h"
+            android:text="R"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            app:layout_constraintStart_toEndOf="@id/e2"
+            android:id="@+id/r"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,6 +19,7 @@
 
     <Transition
             motion:constraintSetStart="@+id/start"
+            motion:duration="3000"
             motion:constraintSetEnd="@+id/end">
     </Transition>
 

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:id="@+id/motion_layout_with_hencoder"
+        tools:ignore="HardcodedText"
+        app:layoutDescription="@xml/scene_hencoder_text"
+        app:showPaths="true"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:id="@+id/guide"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:text="H"
+            android:layout_width="30dp"
+            android:textColor="#FF2D2D"
+            android:layout_height="40dp"
+            android:id="@+id/h"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="36sp"
+    />
+
+    <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:text="E"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:id="@+id/e1"
+            android:textColor="#0072E3"
+            android:textSize="36sp"
+    />
+
+    <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:text="N"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:id="@+id/n"
+            android:textColor="#FFA042"
+            android:textSize="36sp"
+    />
+
+    <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:text="C"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:textColor="#548C00"
+            android:id="@+id/c"
+            android:textSize="36sp"
+    />
+
+    <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:text="O"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:id="@+id/o"
+            android:textColor="#FF2D2D"
+            android:textSize="36sp"
+    />
+
+    <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:text="D"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:id="@+id/d"
+            android:textColor="#FFA042"
+            android:textSize="36sp"
+    />
+
+    <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:text="E"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:id="@+id/e2"
+            android:textColor="#0072E3"
+            android:textSize="36sp"
+    />
+
+    <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:text="R"
+            android:textColor="#548C00"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:id="@+id/r"
+            android:textSize="36sp"
+    />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
