@@ -1,3 +1,5 @@
-include ':app', ':motionlayout',   ':homework',  ':util', ':sample-constraintlayout',
+include ':app',  ':util',
+        ':sample-motionlayout',
+        ':sample-constraintlayout',
         ':sample-begin-delayed',
         ':sample-go'
