@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import androidx.constraintlayout.motion.widget.MotionLayout
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
 import kotlinx.android.synthetic.main.activity_with_view_pager.*
@@ -37,7 +38,7 @@ class WithViewPager : AppCompatActivity() {
             }
 
             override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
-                motion_layout_with_view_pager.progress = (position + positionOffset)
+                (motion_layout_with_view_pager as MotionLayout).progress = (position + positionOffset)
             }
 
             override fun onPageSelected(position: Int) {

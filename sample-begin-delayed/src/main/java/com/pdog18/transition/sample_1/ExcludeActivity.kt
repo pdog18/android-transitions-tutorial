@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
+import androidx.transition.Fade
 import androidx.transition.Slide
 import androidx.transition.TransitionManager
 import com.pdog18.util.setOnToggleListener
@@ -15,11 +16,11 @@ class ExcludeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_exclude)
         exclude_parent.setOnToggleListener { toggle ->
-            val slide = Slide()
+            val fade = Fade()
                 .excludeTarget(left_top, true)
                 .excludeTarget(ImageView::class.java, true)
 
-            TransitionManager.beginDelayedTransition(exclude_parent, slide)
+            TransitionManager.beginDelayedTransition(exclude_parent, fade)
             left_top.visibility = if (toggle) View.GONE else View.VISIBLE
             left_bottom.visibility = if (toggle) View.GONE else View.VISIBLE
 

@@ -21,6 +21,11 @@ class GuideLineChangeFourViewActivity : AppCompatActivity() {
         guide_h.setGuidelinePercent(h)
     }
 
+
+
+
+
+
     class GuidePair(tag: String) {
         private var v = 0f
         private var h = 0f

@@ -5,13 +5,13 @@ import android.os.Bundle
 import android.transition.TransitionManager
 import android.view.View
 import com.pdog18.util.setOnToggleListener
-import kotlinx.android.synthetic.main.activity_main2.*
+import kotlinx.android.synthetic.main.activity_begin_delayed.*
 
-class Main2Activity : AppCompatActivity() {
+class BeginDelayedSampleActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)
+        setContentView(R.layout.activity_begin_delayed)
         title1.setOnToggleListener { visible ->
             TransitionManager.beginDelayedTransition(linear_layout)
             content1.visibility = if (visible) View.GONE else View.VISIBLE

@@ -20,39 +20,12 @@
     <Transition
             motion:constraintSetStart="@+id/start"
             motion:constraintSetEnd="@+id/end">
-        <OnSwipe
-                motion:target="@id/image_filter_view"
-                motion:dragDirection="dragRight"
-                motion:touchAnchorSide="right"
-        />
 
     </Transition>
     <ConstraintSet android:id="@+id/start">
-        <Constraint android:id="@id/image_filter_view"
-                    android:layout_height="86dp"
-                    android:layout_width="86dp"
-                    motion:layout_constraintStart_toStartOf="parent"
-                    motion:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginStart="16dp"
-                    motion:layout_constraintBottom_toBottomOf="parent">
-            <CustomAttribute
-                    motion:attributeName="Crossfade"
-                    motion:customFloatValue="0" />
-        </Constraint>
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
-        <Constraint android:id="@id/image_filter_view"
-                    android:layout_height="86dp"
-                    android:layout_width="86dp"
-                    motion:layout_constraintEnd_toEndOf="parent"
-                    motion:layout_constraintBottom_toBottomOf="parent"
-                    android:layout_marginEnd="16dp"
-                    motion:layout_constraintTop_toTopOf="parent">
-            <CustomAttribute
-                    motion:attributeName="Crossfade"
-                    motion:customFloatValue="1" />
-        </Constraint>
     </ConstraintSet>
 
 </MotionScene>

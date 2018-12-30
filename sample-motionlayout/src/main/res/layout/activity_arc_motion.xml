@@ -10,8 +10,8 @@
         tools:context=".ArcMotion">
 
 
-    <View android:layout_width="50dp"
-          android:layout_height="50dp"
+    <View android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
           android:id="@+id/view_arc_motion"
           android:background="@color/colorAccent"
     />

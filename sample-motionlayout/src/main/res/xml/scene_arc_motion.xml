@@ -28,12 +28,15 @@
 
         <KeyFrameSet>
             <!--拟合曲线  motion:curveFit="spline" 默认为 spline 曲线，可以设置为 linear 直线 -->
-            <!--<KeyPosition
-                    motion:keyPositionType="pathRelative"
+            <!-- framePosition  0 - 100 -->
+            <!-- keyPositionType -->
+            <KeyPosition
                     motion:framePosition="50"
-                    motion:percentY="0.25"
-                    motion:curveFit="spline"
-                    motion:target="@id/view_arc_motion"/>-->
+                    motion:keyPositionType="parentRelative"
+                    motion:percentY="0.75"
+                    motion:percentX="0.25"
+                    motion:curveFit="linear"
+                    motion:target="@id/view_arc_motion"/>
         </KeyFrameSet>
 
 
@@ -43,7 +46,7 @@
         <Constraint android:id="@id/view_arc_motion"
                     android:layout_height="50dp"
                     android:layout_width="50dp"
-                    motion:pathMotionArc="startVertical"
+                    android:layout_marginTop="150dp"
                     motion:layout_constraintStart_toStartOf="parent"
                     motion:layout_constraintTop_toTopOf="parent"
                     motion:layout_constraintBottom_toBottomOf="parent">
@@ -55,6 +58,7 @@
         <Constraint android:id="@id/view_arc_motion"
                     android:layout_height="50dp"
                     android:layout_width="50dp"
+                    android:layout_marginTop="150dp"
                     motion:layout_constraintEnd_toEndOf="parent"
                     motion:layout_constraintTop_toTopOf="parent">
         </Constraint>

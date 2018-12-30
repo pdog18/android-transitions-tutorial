@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
             this.clone(this@MainActivity, R.layout.constranit_set_detail)
         }
 
-
         constraint_parent.setOnToggleListener { toggle ->
             val constraintSet = if (toggle) detail else raw
             TransitionManager.beginDelayedTransition(constraint_parent)

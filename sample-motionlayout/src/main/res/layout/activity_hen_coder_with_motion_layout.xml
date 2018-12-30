@@ -7,7 +7,6 @@
         android:id="@+id/motion_layout_with_hencoder"
         tools:ignore="HardcodedText"
         app:layoutDescription="@xml/scene_hencoder_text"
-        app:showPaths="true"
         android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.Guideline

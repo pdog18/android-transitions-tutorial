@@ -13,7 +13,6 @@
 
         </activity>
 
-
         <activity android:name=".ArcMotion">
 
         </activity>
