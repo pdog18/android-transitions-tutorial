@@ -13,18 +13,6 @@
              android:id="@+id/motion_layout_with_view_pager"
              android:layout_width="match_parent"
     />
-  <!--  <androidx.constraintlayout.motion.widget.MotionLayout
-            android:layout_width="match_parent"
-            android:id="@+id/motion_layout_with_view_pager"
-            app:layoutDescription="@xml/scene_with_view_pager"
-            android:layout_height="200dp">
-        <androidx.constraintlayout.utils.widget.ImageFilterView
-                android:id="@+id/image_filter_view"
-                android:src="@mipmap/pre_avatar"
-                app:altSrc="@mipmap/avatar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-    </androidx.constraintlayout.motion.widget.MotionLayout>-->
 
     <androidx.viewpager.widget.ViewPager
             android:layout_width="match_parent"

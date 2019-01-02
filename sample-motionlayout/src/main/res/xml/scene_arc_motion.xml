@@ -32,10 +32,9 @@
             <!-- keyPositionType -->
             <KeyPosition
                     motion:framePosition="50"
-                    motion:keyPositionType="parentRelative"
+                    motion:keyPositionType="deltaRelative"
                     motion:percentY="0.75"
                     motion:percentX="0.25"
-                    motion:curveFit="linear"
                     motion:target="@id/view_arc_motion"/>
         </KeyFrameSet>
 
