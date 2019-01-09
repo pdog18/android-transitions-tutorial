@@ -29,278 +29,225 @@
 
 
         <!-- R 切换起始/结束状态-->
-        <OnClick
-                motion:clickAction="toggle"
-                motion:target="@id/r"
-        />
+        <OnClick motion:clickAction="toggle"
+                 motion:target="@id/r"/>
 
         <!--左侧 E 过渡到起始状态-->
-        <OnClick
-                motion:clickAction="transitionToStart"
-                motion:target="@id/e1"
-        />
+        <OnClick motion:clickAction="transitionToStart"
+                 motion:target="@id/e1"/>
 
         <!--右侧 E 过渡到结束状态-->
-        <OnClick
-                motion:clickAction="transitionToEnd"
-                motion:target="@id/e2"
-        />
-
+        <OnClick motion:clickAction="transitionToEnd"
+                 motion:target="@id/e2"/>
 
 
         <KeyFrameSet>
             <!-- 位置关键帧 使用 path 坐标系 -->
-            <KeyPosition
-                    motion:target="@id/h"
-                    motion:framePosition="85"
-                    motion:percentX="0.8"
-                    motion:percentY="-0.15"
-                    motion:keyPositionType="pathRelative"
-            />
+            <KeyPosition motion:target="@id/h"
+                         motion:framePosition="85"
+                         motion:percentX="0.8"
+                         motion:percentY="-0.15"
+                         motion:keyPositionType="pathRelative"/>
 
-            <KeyPosition
-                    motion:target="@id/e1"
-                    motion:framePosition="85"
-                    motion:percentX="0.9"
-                    motion:percentY="0.25"
-                    motion:keyPositionType="pathRelative"
-            />
+            <KeyPosition motion:target="@id/e1"
+                         motion:framePosition="85"
+                         motion:percentX="0.9"
+                         motion:percentY="0.25"
+                         motion:keyPositionType="pathRelative"/>
 
-            <KeyPosition
-                    motion:target="@id/n"
-                    motion:framePosition="40"
-                    motion:percentX="0.7"
-                    motion:percentY="-0.25"
-                    motion:keyPositionType="pathRelative"
-            />
+            <KeyPosition motion:target="@id/n"
+                         motion:framePosition="40"
+                         motion:percentX="0.7"
+                         motion:percentY="-0.25"
+                         motion:keyPositionType="pathRelative"/>
 
 
             <!--对 C 同时设置两个关键帧-->
-            <KeyPosition
-                    motion:target="@id/c"
-                    motion:framePosition="85"
-                    motion:percentX="0.95"
-                    motion:percentY="0.25"
-                    motion:keyPositionType="pathRelative"
-            />
+            <KeyPosition motion:target="@id/c"
+                         motion:framePosition="85"
+                         motion:percentX="0.95"
+                         motion:percentY="0.25"
+                         motion:keyPositionType="pathRelative"/>
 
-            <KeyPosition
-                    motion:target="@id/c"
-                    motion:framePosition="35"
-                    motion:percentX="0.35"
-                    motion:percentY="-0.05"
-                    motion:keyPositionType="pathRelative"
-            />
+            <KeyPosition motion:target="@id/c"
+                         motion:framePosition="35"
+                         motion:percentX="0.35"
+                         motion:percentY="-0.05"
+                         motion:keyPositionType="pathRelative"/>
 
 
-            <KeyPosition
-                    motion:target="@id/o"
-                    motion:framePosition="35"
-                    motion:percentX="0.05"
-                    motion:percentY="0.2"
-                    motion:keyPositionType="pathRelative"
-            />
+            <KeyPosition motion:target="@id/o"
+                         motion:framePosition="35"
+                         motion:percentX="0.05"
+                         motion:percentY="0.2"
+                         motion:keyPositionType="pathRelative"/>
 
 
-            <KeyPosition
-                    motion:target="@id/o"
-                    motion:framePosition="85"
-                    motion:percentX="0.85"
-                    motion:percentY="0.2"
-                    motion:keyPositionType="pathRelative"
-            />
+            <KeyPosition motion:target="@id/o"
+                         motion:framePosition="85"
+                         motion:percentX="0.85"
+                         motion:percentY="0.2"
+                         motion:keyPositionType="pathRelative"/>
 
-            <KeyPosition
-                    motion:target="@id/d"
-                    motion:framePosition="15"
-                    motion:transitionEasing="accelerate"
-                    motion:keyPositionType="deltaRelative"
-                    motion:percentY="0.15"
-            />
+            <KeyPosition motion:target="@id/d"
+                         motion:framePosition="15"
+                         motion:transitionEasing="accelerate"
+                         motion:keyPositionType="deltaRelative"
+                         motion:percentY="0.15"/>
 
 
-            <KeyPosition
-                    motion:target="@id/d"
-                    motion:framePosition="85"
-                    motion:transitionEasing="decelerate"
-                    motion:percentX="1.1"
-                    motion:percentY="-0.45"
-                    motion:keyPositionType="pathRelative"
-            />
+            <KeyPosition motion:target="@id/d"
+                         motion:framePosition="85"
+                         motion:transitionEasing="decelerate"
+                         motion:percentX="1.1"
+                         motion:percentY="-0.45"
+                         motion:keyPositionType="pathRelative"/>
 
 
             <!-- 在 90% 的时候到达终点-->
-            <KeyPosition
-                    motion:target="@id/e2"
-                    motion:framePosition="90"
-                    motion:percentX="1"
-                    motion:percentY="0"
-                    motion:keyPositionType="pathRelative"
-            />
+            <KeyPosition motion:target="@id/e2"
+                         motion:framePosition="90"
+                         motion:percentX="1"
+                         motion:percentY="0"
+                         motion:keyPositionType="pathRelative"/>
 
 
             <!-- 差值坐标系 -->
-            <KeyPosition
-                    motion:target="@id/e2"
-                    motion:framePosition="95"
-                    motion:percentX="1"
-                    motion:percentY="1.2"
-                    motion:keyPositionType="deltaRelative"
-            />
-
-
-            <!-- 在开始状态的 Constraint 设置时间模型-->
-           <!-- <KeyPosition
-                    motion:target="@id/r"
-                    motion:transitionEasing="decelerate"
-            />-->
+            <KeyPosition motion:target="@id/e2"
+                         motion:framePosition="95"
+                         motion:percentX="1"
+                         motion:percentY="1.2"
+                         motion:keyPositionType="deltaRelative"/>
 
         </KeyFrameSet>
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
-        <Constraint
-                android:layout_width="wrap_content"
-                android:id="@id/guide"
-                android:orientation="horizontal"
-                motion:layout_constraintGuide_percent="0.5"
-                android:layout_height="wrap_content"/>
+        <Constraint android:layout_width="wrap_content"
+                    android:id="@id/guide"
+                    android:orientation="horizontal"
+                    motion:layout_constraintGuide_percent="0.5"
+                    android:layout_height="wrap_content"/>
 
-        <Constraint
-                android:id="@id/h"
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                motion:layout_constraintTop_toTopOf="parent"
-                motion:layout_constraintStart_toStartOf="parent"
-        />
+        <Constraint android:id="@id/h"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    motion:layout_constraintTop_toTopOf="parent"
+                    motion:layout_constraintStart_toStartOf="parent"/>
 
-        <Constraint
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:id="@id/e1"
-                motion:layout_constraintTop_toBottomOf="@id/h"
-                motion:layout_constraintStart_toStartOf="@id/h"
-        />
+        <Constraint android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:id="@id/e1"
+                    motion:layout_constraintTop_toBottomOf="@id/h"
+                    motion:layout_constraintStart_toStartOf="@id/h"/>
 
-        <Constraint
-                motion:layout_constraintStart_toStartOf="@id/h"
-                motion:layout_constraintTop_toBottomOf="@id/e1"
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:id="@id/n"
-        />
-        <Constraint
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:id="@id/c"
-                motion:layout_constraintEnd_toEndOf="parent"
-                motion:layout_constraintBottom_toTopOf="@id/o"
-        />
-        <Constraint
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                motion:layout_constraintEnd_toEndOf="@id/c"
-                motion:layout_constraintBottom_toTopOf="@id/d"
-                android:id="@id/o"
-        />
+        <Constraint motion:layout_constraintStart_toStartOf="@id/h"
+                    motion:layout_constraintTop_toBottomOf="@id/e1"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:id="@id/n"/>
+
+
+        <Constraint android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:id="@id/c"
+                    motion:layout_constraintEnd_toEndOf="parent"
+                    motion:layout_constraintBottom_toTopOf="@id/o"/>
+
+        <Constraint android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    motion:layout_constraintEnd_toEndOf="@id/c"
+                    motion:layout_constraintBottom_toTopOf="@id/d"
+                    android:id="@id/o"/>
+
         <Constraint android:id="@id/d"
                     android:layout_width="30dp"
                     android:layout_height="40dp"
                     motion:layout_constraintEnd_toEndOf="@id/c"
-                    motion:layout_constraintBottom_toTopOf="@id/e2"
-        />
-        <Constraint
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                motion:layout_constraintEnd_toEndOf="@id/c"
-                motion:layout_constraintBottom_toTopOf="@id/r"
-                android:id="@id/e2"
-        />
-        <Constraint
-                motion:layout_constraintEnd_toEndOf="@id/c"
-                motion:layout_constraintBottom_toBottomOf="parent"
-                android:layout_height="40dp"
-                android:layout_width="30dp"
-                android:id="@id/r"
-                motion:transitionEasing="decelerate"
-        />
+                    motion:layout_constraintBottom_toTopOf="@id/e2"/>
+
+        <Constraint android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    motion:layout_constraintEnd_toEndOf="@id/c"
+                    motion:layout_constraintBottom_toTopOf="@id/r"
+                    android:id="@id/e2"/>
+
+        <Constraint motion:transitionEasing="decelerate"
+                    motion:layout_constraintEnd_toEndOf="@id/c"
+                    motion:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_height="40dp"
+                    android:layout_width="30dp"
+                    android:id="@id/r"/>
 
     </ConstraintSet>
 
 
     <ConstraintSet android:id="@id/end">
-        <Constraint
-                android:layout_width="wrap_content"
-                android:id="@id/guide"
-                android:orientation="horizontal"
-                motion:layout_constraintGuide_percent="0.5"
-                android:layout_height="wrap_content"/>
+        <Constraint android:layout_width="wrap_content"
+                    android:id="@id/guide"
+                    android:orientation="horizontal"
+                    motion:layout_constraintGuide_percent="0.5"
+                    android:layout_height="wrap_content"/>
 
-        <Constraint
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                motion:layout_constraintHorizontal_chainStyle="packed"
-                motion:layout_constraintTop_toTopOf="@id/guide"
-                motion:layout_constraintBottom_toBottomOf="@id/guide"
-                motion:layout_constraintEnd_toStartOf="@id/e1"
-                android:id="@id/h"
-                motion:layout_constraintStart_toStartOf="parent"
-        />
+        <Constraint android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    motion:layout_constraintHorizontal_chainStyle="packed"
+                    motion:layout_constraintTop_toTopOf="@id/guide"
+                    motion:layout_constraintBottom_toBottomOf="@id/guide"
+                    motion:layout_constraintEnd_toStartOf="@id/e1"
+                    android:id="@id/h"
+                    motion:layout_constraintStart_toStartOf="parent"/>
 
-        <Constraint
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:id="@id/e1"
-                motion:layout_constraintEnd_toStartOf="@id/n"
-                motion:layout_constraintBaseline_toBaselineOf="@id/h"
-                motion:layout_constraintStart_toEndOf="@+id/h"/>
 
-        <Constraint
-                motion:layout_constraintBaseline_toBaselineOf="@id/h"
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:id="@id/n"
-                motion:layout_constraintEnd_toStartOf="@id/c"
-                motion:layout_constraintStart_toEndOf="@+id/e1"/>
-        <Constraint
-                motion:layout_constraintBaseline_toBaselineOf="@id/h"
+        <Constraint android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:id="@id/e1"
+                    motion:layout_constraintEnd_toStartOf="@id/n"
+                    motion:layout_constraintBaseline_toBaselineOf="@id/h"
+                    motion:layout_constraintStart_toEndOf="@+id/h"/>
 
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:id="@id/c"
-                motion:layout_constraintEnd_toStartOf="@id/o"
-                motion:layout_constraintStart_toEndOf="@+id/n"/>
-        <Constraint
-                motion:layout_constraintBaseline_toBaselineOf="@id/h"
-                motion:layout_constraintEnd_toStartOf="@id/d"
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:id="@id/o"
-                motion:layout_constraintStart_toEndOf="@+id/c"/>
-        <Constraint
-                motion:layout_constraintBaseline_toBaselineOf="@id/h"
-                motion:layout_constraintStart_toEndOf="@id/o"
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:id="@id/d"
-                motion:layout_constraintEnd_toStartOf="@+id/e2"
-        />
-        <Constraint
-                motion:layout_constraintBaseline_toBaselineOf="@id/h"
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:id="@id/e2"
-                motion:layout_constraintStart_toEndOf="@id/d"
-                motion:layout_constraintEnd_toStartOf="@+id/r"
-        />
-        <Constraint
-                android:id="@id/r"
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                motion:layout_constraintBaseline_toBaselineOf="@id/h"
-                motion:layout_constraintStart_toEndOf="@id/e2"
-                motion:layout_constraintEnd_toEndOf="parent"
-        />
+        <Constraint motion:layout_constraintBaseline_toBaselineOf="@id/h"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:id="@id/n"
+                    motion:layout_constraintEnd_toStartOf="@id/c"
+                    motion:layout_constraintStart_toEndOf="@+id/e1"/>
+
+        <Constraint motion:layout_constraintBaseline_toBaselineOf="@id/h"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:id="@id/c"
+                    motion:layout_constraintEnd_toStartOf="@id/o"
+                    motion:layout_constraintStart_toEndOf="@+id/n"/>
+
+        <Constraint motion:layout_constraintBaseline_toBaselineOf="@id/h"
+                    motion:layout_constraintEnd_toStartOf="@id/d"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:id="@id/o"
+                    motion:layout_constraintStart_toEndOf="@+id/c"/>
+
+        <Constraint motion:layout_constraintBaseline_toBaselineOf="@id/h"
+                    motion:layout_constraintStart_toEndOf="@id/o"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:id="@id/d"
+                    motion:layout_constraintEnd_toStartOf="@+id/e2"/>
+
+        <Constraint motion:layout_constraintBaseline_toBaselineOf="@id/h"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:id="@id/e2"
+                    motion:layout_constraintStart_toEndOf="@id/d"
+                    motion:layout_constraintEnd_toStartOf="@+id/r"/>
+
+        <Constraint android:id="@id/r"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    motion:layout_constraintBaseline_toBaselineOf="@id/h"
+                    motion:layout_constraintStart_toEndOf="@id/e2"
+                    motion:layout_constraintEnd_toEndOf="parent"/>
+
     </ConstraintSet>
 
 </MotionScene>
